@@ -25,7 +25,7 @@
     <!-- header part start -->
     <header>
         <!-- Head container -->
-        <div class="flex flex-col lg:flex-row justify-around items-center bg-[#F9F6E2] ">
+        <div class="flex flex-col lg:flex-row justify-around items-center bg-[#F9F6E2] p-14 ">
             <!-- container description -->
             <div class="text-center ">
                 <h5 class="text-3xl mb-9">---SALE FEVER---</h5>
@@ -40,18 +40,19 @@
             </div>
             <!-- container banner -->
             <div>
-                <img class="w-100% lg:w-[75%]" src="images/Summer 1.png" alt="Summer sale">
+                <img class="w-100% lg:w-[85%]" src="images/Summer 1.png" alt="Summer sale">
             </div>
         </div>
     </header>
     <!-- Header part end -->
     <!-- start of main part -->
     <main>
-        <section class="flex justify-around my-8 lg:my-20">
+        <section class="flex flex-1 flex-col lg:flex-row gap-6
+        mx-4 lg:mx-32  my-8 lg:my-20">
             <!-- product container -->
             <div>
                 <!-- product type 1 -->
-                <div>
+                <div class="p-6">
                     <h2 class="text-5xl font-semibold">Kitchenware</h2>
                     <!-- type 1 collection -->
                     <div class="flex flex-1 flex-col lg:flex-row justify-around gap-6 my-8">
@@ -222,8 +223,19 @@
 
             </div>
             <!-- cart container -->
-            <div>
-                <h4>Have coupon?</h4>
+            <div class=" flex flex-col mt-20">
+                <!-- voucher -->
+                <div class="rounded-lg shadow-lg  bg-white p-4 mb-14">
+                    <h4 class="text-2xl font-medium mb-6">Have coupon?</h4>
+                    <div class="border rounded-lg">
+                        <input class="border-hidden px-6 py-3" type="text" placeholder="Coupon code" name="" id="">
+                        <button class="bg-[#E527B2] rounded-r-lg py-4 px-6" disabled>Apply</button>
+                    </div>
+                </div>
+                <!--shopping list -->
+                <div class="">
+                    <p>hello</p>
+                </div>
             </div>
         </section>
     </main>
