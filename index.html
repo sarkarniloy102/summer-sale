@@ -55,7 +55,7 @@
                 <div class="p-6">
                     <h2 class="text-5xl font-semibold">Kitchenware</h2>
                     <!-- type 1 collection -->
-                    <div class="flex flex-1 flex-col lg:flex-row justify-around gap-6 my-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 justify-around gap-6 my-8">
                         <!-- card box 1 -->
                         <div class="text-center p-5 rounded-lg shadow-md">
                             <div class="bg-gray-300 px-10">
@@ -110,8 +110,8 @@
                 <!-- product type 2 -->
                 <div>
                     <h2 class="text-5xl font-semibold">Sportswear</h2>
-                    <!-- type 1 collection -->
-                    <div class="flex flex-1 flex-col lg:flex-row justify-around gap-6 my-8">
+                    <!-- type 2 collection -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 justify-around gap-6 my-8">
                         <!-- card box 1 -->
                         <div class="text-center p-5 rounded-lg shadow-md">
                             <div class="bg-gray-300 px-10">
@@ -166,8 +166,8 @@
                 <!-- product type 3 -->
                 <div>
                     <h2 class="text-5xl font-semibold">Furniture</h2>
-                    <!-- type 1 collection -->
-                    <div class="flex flex-1 flex-col lg:flex-row justify-around gap-6 my-8">
+                    <!-- type 3 collection -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 justify-around gap-6 my-8">
                         <!-- card box 1 -->
                         <div class="text-center p-5 rounded-lg shadow-md">
                             <div class="bg-gray-300 px-10">
@@ -228,13 +228,25 @@
                 <div class="rounded-l-lg shadow-lg  bg-white p-4 mb-14">
                     <h4 class="text-2xl font-medium mb-6">Have coupon?</h4>
                     <div class="border rounded-lg">
-                        <input class="border-hidden px-6 py-3" type="text" placeholder="Coupon code" name="" id="">
-                        <button class="bg-[#E527B2] rounded-r-lg py-4 px-6" disabled>Apply</button>
+                        <input class="border-hidden pl-2 py-3" type="text" placeholder="Coupon code" name="" id="">
+                        <button class="bg-[#E527B2] rounded-r-lg py-4 px-5" disabled>Apply</button>
                     </div>
                 </div>
                 <!--shopping list -->
-                <div class="">
-                    <p>hello</p>
+                <div class="relative rounded-lg shadow-lg py-10 px-6">
+                    <!-- item list -->
+                    <div class="mb-6">
+                        hello guys
+                    </div>
+                    <hr class="mb-3">
+                    <!-- Cost -->
+                    <div class="mb-6">
+                        hello ladies
+                    </div>
+                    <hr class="mb-3">
+
+                    <button class="absolute bg-[#E527B2] w-[70%] mx-6 rounded-lg py-2 px-5 mt-3 " disabled>Make
+                        Purchase</button>
                 </div>
             </div>
         </section>
