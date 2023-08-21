@@ -35,7 +35,8 @@
                 </h3>
                 <div class="flex flex-col lg:flex-row text-2xl justify-center items-center gap-3 mt-9">
                     <p class=" font-medium">Use Promo Code</p>
-                    <button class="bg-[#E527B2] font-semibold rounded-lg px-4 py-3">SELL200</button>
+                    <button
+                        class="bg-[#E527B2] text-white font-semibold font-semibold rounded-lg px-4 py-3">SELL200</button>
                 </div>
             </div>
             <!-- container banner -->
@@ -57,7 +58,7 @@
                     <!-- type 1 collection -->
                     <div class="grid grid-cols-1 lg:grid-cols-3 justify-around gap-6 my-8">
                         <!-- card box 1 -->
-                        <div class="text-center p-5 rounded-lg shadow-md">
+                        <div onclick="Accessories_1()" class="text-center p-5 rounded-lg shadow-md cursor-pointer">
                             <div class="bg-gray-300 px-10">
                                 <img class="mx-auto" src="images/prod1.png" alt="">
                             </div>
@@ -69,11 +70,11 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            <p class="text-[20px] font-semibold">K. Accessories</p>
-                            <p class="text-[20px]">39.00 TK</p>
+                            <p id="K_Accessories1" class="text-[20px] font-semibold ">K. Accessories</p>
+                            <p class="text-[20px]"><span id="K_Accessories1_price">39.00</span> TK</p>
                         </div>
                         <!-- card box 2 -->
-                        <div class="text-center p-5 rounded-lg shadow-md">
+                        <div onclick="Accessories_2()" class="text-center p-5 rounded-lg shadow-md cursor-pointer">
                             <div class="bg-gray-300 px-10">
                                 <img class="mx-auto" src="images/prod2.png" alt="">
                             </div>
@@ -85,11 +86,11 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            <p class="text-[20px] font-semibold">K. Accessories</p>
-                            <p class="text-[20px]">25.00 TK</p>
+                            <p id="K_Accessories2" class="text-[20px] font-semibold ">K. Accessories</p>
+                            <p class="text-[20px]"><span id="K_Accessories2_price">25.00</span> TK</p>
                         </div>
                         <!-- card box 3 -->
-                        <div class="text-center p-5 rounded-lg shadow-md">
+                        <div onclick="HomeCooker()" class="text-center p-5 rounded-lg shadow-md cursor-pointer">
                             <div class="bg-gray-300 px-10">
                                 <img class="mx-auto" src="images/prod3.png" alt="">
                             </div>
@@ -101,8 +102,8 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            <p class="text-[20px] font-semibold">Home Cooker</p>
-                            <p class="text-[20px]">49.00 TK</p>
+                            <p id="homecookername" class="text-[20px] font-semibold ">Home Cooker</p>
+                            <p class="text-[20px]"><span id="homecookerprice">49.00</span> TK</p>
                         </div>
                     </div>
 
@@ -112,8 +113,8 @@
                     <h2 class="text-5xl font-semibold">Sportswear</h2>
                     <!-- type 2 collection -->
                     <div class="grid grid-cols-1 lg:grid-cols-3 justify-around gap-6 my-8">
-                        <!-- card box 1 -->
-                        <div class="text-center p-5 rounded-lg shadow-md">
+                        <!-- card box 4 -->
+                        <div onclick="SportsBackCap()" class="text-center p-5 rounded-lg shadow-md cursor-pointer">
                             <div class="bg-gray-300 px-10">
                                 <img class="mx-auto" src="images/prod4.png" alt="">
                             </div>
@@ -125,11 +126,11 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            <p class="text-[20px] font-semibold">Sports Back Cap</p>
-                            <p class="text-[20px]">49.00 TK</p>
+                            <p id="sportsbackcapname" class="text-[20px] font-semibold ">Sports Back Cap</p>
+                            <p class="text-[20px]"><span id="sportsbackcapprice">49.00</span> TK</p>
                         </div>
-                        <!-- card box 2 -->
-                        <div class="text-center p-5 rounded-lg shadow-md">
+                        <!-- card box 5 -->
+                        <div onclick="FullJerseySet()" class="text-center p-5 rounded-lg shadow-md cursor-pointer">
                             <div class="bg-gray-300 px-10">
                                 <img class="mx-auto" src="images/prod5.png" alt="">
                             </div>
@@ -141,11 +142,11 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            <p class="text-[20px] font-semibold">Full Jersey Set</p>
-                            <p class="text-[20px]">69.00 TK</p>
+                            <p id="fulljerseysetname" class="text-[20px] font-semibold ">Full Jersey Set</p>
+                            <p class="text-[20px]"><span id="fulljerseysetprice">69.00</span> TK</p>
                         </div>
-                        <!-- card box 3 -->
-                        <div class="text-center p-5 rounded-lg shadow-md">
+                        <!-- card box 6 -->
+                        <div onclick="SportsCates()" class="text-center p-5 rounded-lg shadow-md cursor-pointer">
                             <div class="bg-gray-300 px-10">
                                 <img class="mx-auto" src="images/prod6.png" alt="">
                             </div>
@@ -157,8 +158,8 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            <p class="text-[20px] font-semibold">Sports cates</p>
-                            <p class="text-[20px]">159.00 TK</p>
+                            <p id="sportscatesname" class="text-[20px] font-semibold ">Sports cates</p>
+                            <p class="text-[20px]"><span id="sportscatesprice">159.00</span> TK</p>
                         </div>
                     </div>
 
@@ -168,8 +169,8 @@
                     <h2 class="text-5xl font-semibold">Furniture</h2>
                     <!-- type 3 collection -->
                     <div class="grid grid-cols-1 lg:grid-cols-3 justify-around gap-6 my-8">
-                        <!-- card box 1 -->
-                        <div class="text-center p-5 rounded-lg shadow-md">
+                        <!-- card box 7 -->
+                        <div onclick="SingleRelaxChair()" class="text-center p-5 rounded-lg shadow-md cursor-pointer">
                             <div class="bg-gray-300 px-10">
                                 <img class="mx-auto" src="images/prod7.png" alt="">
                             </div>
@@ -181,11 +182,11 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            <p class="text-[20px] font-semibold">Single Relax Chair</p>
-                            <p class="text-[20px]">185.00 TK</p>
+                            <p id="singlerelaxchairname" class="text-[20px] font-semibold ">Single Relax Chair</p>
+                            <p class="text-[20px]"><span id="singlerelaxchairprice">185.00</span> TK</p>
                         </div>
-                        <!-- card box 2 -->
-                        <div class="text-center p-5 rounded-lg shadow-md">
+                        <!-- card box 8 -->
+                        <div onclick="ChildrenPlay()" class="text-center p-5 rounded-lg shadow-md cursor-pointer">
                             <div class="bg-gray-300 px-10">
                                 <img class="mx-auto" src="images/prod8.png" alt="">
                             </div>
@@ -197,11 +198,11 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            <p class="text-[20px] font-semibold">Children play</p>
-                            <p class="text-[20px]">299.00 TK</p>
+                            <p id="childrenplayname" class="text-[20px] font-semibold ">Children play</p>
+                            <p class="text-[20px]"><span id="childrenplayprice">299.00</span> TK</p>
                         </div>
                         <!-- card box 3 -->
-                        <div class="text-center p-5 rounded-lg shadow-md">
+                        <div onclick="FlexibleSofa() " class="text-center p-5 rounded-lg shadow-md cursor-pointer">
                             <div class="bg-gray-300 px-10">
                                 <img class="mx-auto" src="images/prod9.png" alt="">
                             </div>
@@ -213,8 +214,8 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                            <p class="text-[20px] font-semibold">Flexible Sofa</p>
-                            <p class="text-[20px]">339.00 TK</p>
+                            <p id="flexiblesofaname" class="text-[20px] font-semibold ">Flexible Sofa</p>
+                            <p class="text-[20px]"> <span id="flexiblesofaprice">339.00</span> TK</p>
                         </div>
                     </div>
 
@@ -227,19 +228,21 @@
                 <!-- voucher -->
                 <div class="rounded-l-lg shadow-lg  bg-white p-4 mb-14">
                     <h4 class="text-2xl font-medium mb-6">Have coupon?</h4>
-                    <div class="border rounded-lg">
-                        <input class="border-hidden pl-2 py-3" type="text" placeholder="Coupon code" name="" id="">
-                        <button class="text-white font-semibold bg-[#E527B2] rounded-r-lg py-4 px-5"
+                    <div class="flex border rounded-lg">
+                        <input class="outline-none w-[80%] lg:w-auto pl-2 py-3" type="text" placeholder="Coupon code"
+                            name="" id="">
+                        <button
+                            class="text-white w-[20%]  lg:w-auto font-semibold bg-[#E527B2] rounded-r-lg py-4 px-1 lg:px-5 md:px-5"
                             disabled>Apply</button>
                     </div>
                 </div>
                 <!--shopping list -->
                 <div class="relative rounded-lg shadow-lg py-10 px-6">
                     <!-- item list -->
-                    <div class="mb-6">
-                        hello guys
+                    <div id="ItemList" class="mb-6">
+
                     </div>
-                    <hr class="mb-3">
+                    <hr class="mb-3 ">
                     <!-- Cost -->
                     <div class="mb-6">
                         hello ladies
@@ -259,6 +262,9 @@
 
     </footer>
 
+    <!-- js file -->
+    <script src="js/utilities.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
