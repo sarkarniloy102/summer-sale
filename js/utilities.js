@@ -5,12 +5,67 @@ function GetCardBoxID(id) {
     return cardboxtext;
 
 }
-// add list item for each product type
-function AddItemList(itemname, itemprice) {
-    const itemlist = document.getElementById('ItemList');
+
+// add list of item name for each product type which one will be clicked
+function AddItemList(itemname) {
+    const itemlist = document.getElementById('ItemListName');
     const count = itemlist.childElementCount;
-    const p = document.createElement('p');
-    p.innerHTML = `${count + 1} ${'.'} ${itemname}`;
-    p.classList.add('font-medium', 'bg-base-100', 'text-2xl');
-    itemlist.appendChild(p);
+    const item = document.createElement('p');
+    item.innerHTML = `${count + 1} ${'.'} ${itemname}`;
+    item.classList.add('font-medium', 'text-2xl');
+    itemlist.appendChild(item);
 }
+
+// Calculate total price
+let Total = 0;
+function Calculator(price) {
+    Total += price;
+    return Total;
+}
+// // add list of item price for each product type which one will be clicked
+function AddItemPrice(itemprice) {
+
+    const purchasebtn = document.getElementById('PurchaseBtn')
+
+    const TotalPrice = Calculator(parseFloat(itemprice));
+    if (TotalPrice > 0)
+        purchasebtn.disabled = false;
+    else
+        purchasebtn.disabled = true;
+
+    const itemlistprice = document.getElementById('ItemListPrice');
+    itemlistprice.innerHTML = `${"Total price:"} ${TotalPrice} ${"TK"}`;
+    itemlistprice.classList.add('font-medium', 'text-2xl');
+
+    Discount(TotalPrice, itemlistprice);
+}
+
+// Discount 
+function Discount(TotalPrice, itemlistprice) {
+    const Couponid = document.getElementById('coupon');
+    const couponcode = Couponid.value;
+    let price = TotalPrice;
+    const couponbtn = document.getElementById('ApplyBtn');
+
+    if (TotalPrice >= 200) {
+        couponbtn.disabled = false;
+
+        const totaldiscount = TotalPrice * parseFloat(20 / 100);
+        price -= totaldiscount;
+        // add discount by creation new element
+        const item = document.createElement('p');
+        item.innerHTML = `${"Discount: "}  ${totaldiscount} ${"TK"}`;
+        item.classList.add('font-medium', 'text-2xl');
+        itemlistprice.appendChild(item);
+        // after getting discount show the total price
+        const newtotal = document.createElement('p');
+        newtotal.innerHTML = `${"Total:"} ${price} ${TK}`;
+        itemlistprice.appendChild(newtotal);
+    }
+    else
+        couponbtn.disabled = true;
+
+}
+
+
+
