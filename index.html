@@ -249,10 +249,31 @@
                     </div>
                     <hr class="mb-3">
 
-                    <button id="PurchaseBtn"
+                    <!-- <button id="PurchaseBtn"
                         class="absolute text-white font-semibold bg-[#E527B2] w-[70%] mx-6 rounded-lg py-2 px-5 mt-3 "
                         disabled>Make
+                        Purchase</button> -->
+                    <!-- Open the modal using ID.showModal() method -->
+
+                    <button id="PurchaseBtn"
+                        class="absolute text-white font-semibold bg-[#E527B2] w-[70%] mx-6 rounded-lg py-2 px-5 mt-3 "
+                        disabled onclick="my_modal_2.showModal()">Make
                         Purchase</button>
+                    <dialog id="my_modal_2" class="modal text-center">
+
+                        <form method="dialog" class="modal-box p-0 lg:p-16">
+                            <img class="mx-auto" src="images/congo.png" alt="congo">
+                            <h3 class="font-bold text-5xl">Congratulations</h3>
+                            <p class="py-4">Your Purchase the product</p>
+                            <button id="HomeBtn"
+                                class=" text-white   font-semibold bg-[#E527B2] rounded-lg py-4 px-1 lg:px-5 md:px-5 cursor-pointer">Go
+                                Home</button>
+
+                        </form>
+                        </form>
+                        <!--  -->
+
+                    </dialog>
                 </div>
             </div>
         </section>

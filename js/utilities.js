@@ -34,13 +34,13 @@ function AddItemPrice(itemprice) {
         purchasebtn.disabled = true;
 
     const itemlistprice = document.getElementById('ItemListPrice');
-    itemlistprice.innerHTML = `${"Total price:"} ${TotalPrice} ${"TK"}`;
+    itemlistprice.innerHTML = `${"Total price:"} ${TotalPrice.toFixed(2)} ${"TK"}`;
     itemlistprice.classList.add('font-medium', 'text-2xl');
 
     Discount(TotalPrice, itemlistprice);
 }
 
-// Discount 
+// Discount & after discount show the total value
 function Discount(TotalPrice, itemlistprice) {
     const Couponid = document.getElementById('coupon');
     const couponcode = Couponid.value;
@@ -54,16 +54,21 @@ function Discount(TotalPrice, itemlistprice) {
         price -= totaldiscount;
         // add discount by creation new element
         const item = document.createElement('p');
-        item.innerHTML = `${"Discount: "}  ${totaldiscount} ${"TK"}`;
+        item.innerHTML = `${"Discount: "}  ${totaldiscount.toFixed(2)} ${"TK"}`;
         item.classList.add('font-medium', 'text-2xl');
         itemlistprice.appendChild(item);
         // after getting discount show the total price
         const newtotal = document.createElement('p');
-        newtotal.innerHTML = `${"Total:"} ${price} ${TK}`;
+        newtotal.innerHTML = `${"Total:"} ${price.toFixed(2)} ${"TK"}`;
         itemlistprice.appendChild(newtotal);
     }
     else
         couponbtn.disabled = true;
+
+    const GoHome = document.getElementById('HomeBtn');
+    GoHome.addEventListener('click', function () {
+        window.location.href = "index.html";
+    });
 
 }
 
